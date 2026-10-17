@@ -1,0 +1,264 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>雨燕云 - 基础网络连接与节点服务说明</title><meta name="description" content="雨燕云为您提供清晰透明的节点服务规格与网络连接指引，解答您在配置、选择套餐及日常使用中的常见疑问。"><meta name="keywords" content="雨燕云,网络节点,数据传输,订购规格,网络连接"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-42de23fae6.zpfpn.cn/"><meta property="og:type" content="website"><meta property="og:title" content="雨燕云 - 基础网络连接与节点服务说明"><meta property="og:description" content="雨燕云为您提供清晰透明的节点服务规格与网络连接指引，解答您在配置、选择套餐及日常使用中的常见疑问。"><meta property="og:url" content="https://p-42de23fae6.zpfpn.cn/"><meta property="og:site_name" content="雨燕云"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-42de23fae6.zpfpn.cn/", "name": "雨燕云 - 基础网络连接与节点服务说明", "description": "雨燕云为您提供清晰透明的节点服务规格与网络连接指引，解答您在配置、选择套餐及日常使用中的常见疑问。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="731627ca50a3e4f8383defc3:9bb8f322d51894d01438d058b06bb354f88ac27b2c2653568360104db8e79084:269316a3ba3e583f72c0"></head><body id="top"><style>
+:root {--bg-slate: #f1f5f9;--surface: #ffffff;--surface-alt: #e2e8f0;--text-main: #1e293b;--text-muted: #64748b;--cyan-primary: #0891b2;--cyan-accent: #06b6d4;--cyan-light: #ecfeff;--border: #cbd5e1;--line-strong: #0f172a}
+* {box-sizing: border-box;margin: 0;padding: 0}
+body {font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;background-color: var(--bg-slate);color: var(--text-main);line-height: 1.75;font-size: 16px;-webkit-font-smoothing: antialiased}
+a {color: var(--cyan-primary);text-decoration: none}
+a:hover {text-decoration: underline}
+.site-header {border-bottom: 1px solid var(--border);background-color: var(--surface);padding: 14px 24px}
+.breadcrumb-nav {max-width: 980px;margin: 0 auto;font-size: 14px;color: var(--text-muted);display: flex;flex-wrap: wrap;align-items: center;gap: 8px}
+.breadcrumb-nav span {color: var(--border)}
+.nav-contents {margin-left: auto;display: flex;gap: 16px;font-size: 14px}
+.nav-contents a {color: var(--text-muted)}
+.nav-contents a:hover {color: var(--cyan-primary)}
+main {max-width: 980px;margin: 0 auto;padding: 48px 24px 80px}
+.article-lead {border-bottom: 2px solid var(--border);padding-bottom: 40px;margin-bottom: 48px}
+.meta-tag {display: inline-block;font-size: 12px;font-weight: 700;letter-spacing: 0.05em;text-transform: uppercase;color: var(--cyan-primary);background-color: var(--cyan-light);padding: 4px 10px;border-radius: 2px;margin-bottom: 16px}
+h1.brand-title {font-size: 34px;line-height: 1.3;color: var(--line-strong);margin-bottom: 24px;font-weight: 800}
+.editorial-body {font-size: 18px;color: #334155;line-height: 1.85}
+.editorial-body p {margin-bottom: 20px}
+.editorial-body p:last-child {margin-bottom: 0}
+.section-block {margin-bottom: 64px}
+.section-header {margin-bottom: 28px}
+.section-question {font-size: 14px;font-weight: 700;color: var(--cyan-primary);margin-bottom: 4px;text-transform: uppercase;letter-spacing: 0.04em}
+h2.section-heading {font-size: 26px;color: var(--line-strong);font-weight: 800}
+.guide-cards {display: grid;grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));gap: 20px}
+.watermark-card {position: relative;background-color: var(--surface);border: 1px solid var(--border);padding: 32px 24px 28px;overflow: hidden;border-radius: 4px}
+.watermark-card .card-index {position: absolute;right: -8px;bottom: -20px;font-size: 96px;line-height: 1;font-weight: 900;color: #f1f5f9;z-index: 1;user-select: none;font-family: monospace, sans-serif}
+.watermark-card .card-content {position: relative;z-index: 2}
+.watermark-card h3 {font-size: 18px;color: var(--line-strong);margin-bottom: 12px}
+.watermark-card p {font-size: 15px;color: var(--text-muted);line-height: 1.65}
+.plans-vertical-list {display: flex;flex-direction: column;gap: 16px}
+.plan-row {background-color: var(--surface);border: 1px solid var(--border);border-radius: 4px;padding: 24px;display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;gap: 20px;transition: border-color 0.2s}
+.plan-row.featured {border-left: 6px solid var(--cyan-primary);background-color: #fafcfd}
+.plan-meta {flex: 1 1 240px}
+.plan-meta h3 {font-size: 20px;color: var(--line-strong);display: flex;align-items: center;gap: 10px}
+.badge-rec {font-size: 12px;background-color: var(--cyan-primary);color: #ffffff;padding: 2px 8px;border-radius: 2px;font-weight: 600}
+.plan-meta .sub-note {font-size: 13px;color: var(--text-muted);margin-top: 4px}
+.plan-pricing {flex: 0 0 160px}
+.plan-price-main {font-size: 24px;font-weight: 800;color: var(--line-strong)}
+.plan-price-annual {font-size: 13px;color: var(--cyan-primary);font-weight: 500}
+.plan-specs {flex: 2 1 320px}
+.plan-specs ul {list-style: none;display: grid;grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));gap: 6px 12px;font-size: 14px;color: var(--text-main)}
+.plan-specs li {position: relative;padding-left: 14px}
+.plan-specs li::before {content: "•";position: absolute;left: 0;color: var(--cyan-primary);font-weight: bold}
+.plan-action {flex: 0 0 auto}
+.btn-select {display: inline-block;padding: 8px 18px;background-color: var(--surface-alt);color: var(--line-strong);font-size: 14px;font-weight: 600;border-radius: 3px;text-decoration: none}
+.plan-row.featured .btn-select {background-color: var(--cyan-primary);color: #ffffff}
+.btn-select:hover {text-decoration: none;opacity: 0.9}
+.setup-guide {background-color: var(--surface);border: 1px solid var(--border);padding: 28px;border-radius: 4px;margin-bottom: 24px}
+.setup-guide h3 {font-size: 17px;color: var(--line-strong);margin-bottom: 12px}
+.setup-guide p {font-size: 15px;color: var(--text-muted);margin-bottom: 12px}
+.setup-guide p:last-child {margin-bottom: 0}
+.faq-ordered-list {list-style: none;counter-reset: faq-counter}
+.faq-item {counter-increment: faq-counter;background-color: var(--surface);border: 1px solid var(--border);padding: 24px;margin-bottom: 16px;border-radius: 4px}
+.faq-header-line {display: flex;align-items: baseline;gap: 12px;margin-bottom: 10px}
+.faq-index {font-family: monospace, sans-serif;font-size: 16px;font-weight: 800;color: var(--cyan-primary)}
+.faq-title {font-size: 17px;color: var(--line-strong);font-weight: 700}
+.faq-body {font-size: 15px;color: var(--text-muted);padding-left: 28px;line-height: 1.7}
+footer.site-footer {border-top: 1px solid var(--border);padding: 40px 24px;background-color: var(--surface);text-align: center;font-size: 13px;color: var(--text-muted)}
+footer.site-footer p {margin-bottom: 6px}
+@media (max-width: 768px) {
+  .breadcrumb-nav {flex-direction: column;align-items: flex-start}
+  .nav-contents {margin-left: 0;margin-top: 8px}
+  .plan-row {flex-direction: column;align-items: flex-start}
+  .plan-pricing, .plan-specs, .plan-action {width: 100%}
+  .faq-body {padding-left: 0}
+}
+</style><header class="site-header">
+  <nav class="breadcrumb-nav">
+    <div>
+      <a href="#">首页</a>
+      <span>/</span>
+      <a href="#plans">服务规格</a>
+      <span>/</span>
+      <a href="#guide">使用说明</a>
+      <span>/</span>
+      <span>雨燕云技术简报</span>
+    </div>
+    <div class="nav-contents">
+      <a href="#overview">为什么选择</a>
+      <a href="#plans">查看方案</a>
+      <a href="#guide">配置流程</a>
+      <a href="#faq">常见解答</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <article class="article-lead" id="overview">
+    <span class="meta-tag">专栏架构观察</span>
+    <h1 class="brand-title">雨燕云：如何在多端环境中规划与配置可靠的数据分流通道？</h1>
+    <div class="editorial-body">
+      <p>当你每天在不同设备之间频繁切换，尝试访问分布式云服务、海外协作文档或媒体资源时，网络链路的不确定性往往是阻碍生产力的关键瓶颈。面对复杂的网络拓扑，是盲目堆砌过剩的带宽预算，还是选用针对实际应用优化的路由方案？</p>
+      <p>雨燕云的出发点，在于将纷繁复杂的数据节点转化为结构透明、调度清晰的标准化资源。无论是轻量级的随身查阅，还是针对关键业务链路的专线加速，我们建议使用者先理清自身对并发设备数、月度数据流量以及特定流媒体路由的具体需求，再选择相适配的技术规格。</p>
+    </div>
+  </article>
+
+  <section class="section-block" id="principles">
+    <div class="section-header">
+      <div class="section-question">如何建立清晰的使用预期？</div>
+      <h2 class="section-heading">服务配置的三项准则</h2>
+    </div>
+    <div class="guide-cards">
+      <div class="watermark-card">
+        <div class="card-index">01</div>
+        <div class="card-content">
+          <h3>明确流量与周期的关系</h3>
+          <p>流量并非越多越好，而是要与业务周期高度吻合。根据日常传输负载预估月度配额，既能规避闲置浪费，也能确保节点带宽利用率维持在平稳区间。</p>
+        </div>
+      </div>
+      <div class="watermark-card">
+        <div class="card-index">02</div>
+        <div class="card-content">
+          <h3>关注设备并发阈值</h3>
+          <p>多终端并行使用时，单账号设定的连接数上限直接关系到链路稳定性。根据个人工作站、移动设备及家庭局域网的分布合理规划接入端数。</p>
+        </div>
+      </div>
+      <div class="watermark-card">
+        <div class="card-index">03</div>
+        <div class="card-content">
+          <h3>辨析传输协议与专线</h3>
+          <p>不同节点池对应差异化的路由路径。针对关键办公与游戏低延迟诉求，选用配备优化路由与专线调度的套餐，能够显著减少数据重传与丢包。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block" id="plans">
+    <div class="section-header">
+      <div class="section-question">哪种规格更适合当前业务？</div>
+      <h2 class="section-heading">订购计划与规格横向展开</h2>
+    </div>
+    <div class="plans-vertical-list">
+      <div class="plan-row">
+        <div class="plan-meta">
+          <h3>基础版</h3>
+          <div class="sub-note">适于轻度办公查阅与常规网页浏览</div>
+        </div>
+        <div class="plan-pricing">
+          <div class="plan-price-main">¥15/月</div>
+          <div class="plan-price-annual">按年付仅需 ¥150/年</div>
+        </div>
+        <div class="plan-specs">
+          <ul>
+            <li>每月 100GB 极速流量</li>
+            <li>支持 3 台设备同时在线</li>
+            <li>解锁基础流媒体</li>
+            <li>普通线路节点池</li>
+          </ul>
+        </div>
+        <div class="plan-action">
+          <a href="#" class="btn-select">选购规格</a>
+        </div>
+      </div>
+
+      <div class="plan-row featured">
+        <div class="plan-meta">
+          <h3>旗舰版 <span class="badge-rec">推荐规格</span></h3>
+          <div class="sub-note">兼顾高带宽需求、游戏加速与主流原生媒体</div>
+        </div>
+        <div class="plan-pricing">
+          <div class="plan-price-main">¥35/月</div>
+          <div class="plan-price-annual">按年付仅需 ¥350/年</div>
+        </div>
+        <div class="plan-specs">
+          <ul>
+            <li>每月 300GB 极速流量</li>
+            <li>支持 5 台设备同时在线</li>
+            <li>全节点原生流媒体解锁</li>
+            <li>IPLC 专线游戏加速优化</li>
+            <li>7x24 优先工单支持</li>
+          </ul>
+        </div>
+        <div class="plan-action">
+          <a href="#" class="btn-select">立即启用</a>
+        </div>
+      </div>
+
+      <div class="plan-row">
+        <div class="plan-meta">
+          <h3>团队版</h3>
+          <div class="sub-note">面向小型协作工作室与高并发连接环境</div>
+        </div>
+        <div class="plan-pricing">
+          <div class="plan-price-main">¥85/月</div>
+          <div class="plan-price-annual">按年付仅需 ¥850/年</div>
+        </div>
+        <div class="plan-specs">
+          <ul>
+            <li>每月 1000GB 极速流量</li>
+            <li>支持 20 台设备同时在线</li>
+            <li>VIP 专属高带宽节点</li>
+            <li>支持企业定制路由</li>
+            <li>专属客户经理服务</li>
+          </ul>
+        </div>
+        <div class="plan-action">
+          <a href="#" class="btn-select">选购规格</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block" id="guide">
+    <div class="section-header">
+      <div class="section-question">如何开始首次连接？</div>
+      <h2 class="section-heading">客户端与通用接入流程说明</h2>
+    </div>
+    <div class="setup-guide">
+      <h3>订购完成后的标准配置步骤</h3>
+      <p>雨燕云支持主流通用网络代理客户端。在选定套餐并生成订阅凭证后，用户可将专属订阅链接导入至支持对应协议的第三方应用程序中，无需繁琐的手动逐节点录入。</p>
+      <p>目前官方不提供专有封闭式客户端下载，用户可在桌面端（如 Windows、macOS）或移动端（如 iOS、Android）使用开源或成熟通用的网络代理工具完成接入。导入订阅后，请根据本地网络运营商特点选择节点组进行测延迟并启动系统路由分流。</p>
+    </div>
+  </section>
+
+  <section class="section-block" id="faq">
+    <div class="section-header">
+      <div class="section-question">还有哪些疑惑需要解答？</div>
+      <h2 class="section-heading">常见问题与操作说明</h2>
+    </div>
+    <ol class="faq-ordered-list">
+      <li class="faq-item">
+        <div class="faq-header-line">
+          <span class="faq-index">01.</span>
+          <h3 class="faq-title">当月流量用尽之后，服务会如何处理？</h3>
+        </div>
+        <div class="faq-body">
+          当月度配额达到上限后，节点连接将暂停传输，直至下一个记账周期开始自动重置。若当月出现临时性高负载需求，可在控制台选择流量叠加包或直接变更为更高规格的套餐计划。
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-header-line">
+          <span class="faq-index">02.</span>
+          <h3 class="faq-title">设备同时在线数是如何计算的？</h3>
+        </div>
+        <div class="faq-body">
+          在线数依据正在与雨燕云节点建立活跃传输连接的物理或虚拟设备判定。例如基础版允许 3 台设备并发在线；若超出上限，后接入的设备将可能面临握手超时或前序连接被置换的情况。
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-header-line">
+          <span class="faq-index">03.</span>
+          <h3 class="faq-title">IPLC 专线与普通线路节点池有何本质差异？</h3>
+        </div>
+        <div class="faq-body">
+          普通线路节点基于常规公网多跳传输，在国际网络出口拥堵时可能出现延迟抖动；旗舰版及以上提供的 IPLC 专线则采用点对点专属内网通道跨越边境，提供更低延迟与极低丢包表现，适合竞技游戏及高时效业务。
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-header-line">
+          <span class="faq-index">04.</span>
+          <h3 class="faq-title">如何确保在各类设备上的配置兼容性？</h3>
+        </div>
+        <div class="faq-body">
+          雨燕云输出符合行业通行规范的通用订阅链接。只需在对应的开源或通用工具内粘贴该链接，解析器即可自动识别节点地址、端口及加密规则。请保持本地代理规则处于更新状态以获取最佳节点映射。
+        </div>
+      </li>
+    </ol>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 雨燕云 网络服务技术资料文档库</p>
+  <p>各项数据与规格参数以控制台当前生效版本为准，请遵守各节点所在地法律法规合理使用网络资源。</p>
+</footer><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
